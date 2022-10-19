@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass';
+}
+
+html {
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    min-width: 970px;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    padding-top: 3em;
+}
+
+h1, h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding-bottom: 0.3em;
+    font-size: 1.2em;
+}
+
+/* BARRA DE NAVEGACAO */
+#nav-container {
+    text-align: center;
+    background: #013243;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 50px;
+}
+
+#nav-container ul li {
+    position: left;
+    list-style: none;
+    display: inline-block;
+    padding: 1em;
+}
+
+#nav-container ul a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: #fff;
+}
+
+#nav-container ul a:hover {
+    color: #4dbde5;
+}
+
+
+/* CONTEUDO */
+#conteudo {
+    background: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+}
+
+#box-conteudo {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 1em;
+}
+
+#box-conteudo a {
+    color: #0f6ecd;
+    text-decoration: none;
+}
+
+#box-conteudo a:hover {
+    text-decoration: underline;
+}
+
+#conteudo-container {
+    float: right;
+    width: 80%;
+}
+
+#conteudo-container img {
+    width: 80%;
+    padding-bottom: 3em;
+}
+
+#nav-conteudo {
+    margin: 0 auto;
+    left: 0;
+}
+
+#nav-conteudo-container {
+    width: 160px;
+    padding: 0.5em;
+    position: fixed;
+}
+
+#conteudo-container p{
+    font-size: 0.9em;
+}
+
+.pd-btm {
+    margin-bottom: 2.5em;
+}
+
+.left {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#titulo-nav {
+    padding-top: 6em;
+    color: #777777;
+}
+
+#titulo-nav img{
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 0.7em;
+}
+
+#titulo-nav h3{
+    display: inline-block;
+}
+
+#botoes-nav ul li {
+    list-style: none;
+}
+
+#botoes-nav ul a {
+    padding-left: 1.5em;
+    list-style: none;
+    color: #777777;
+    text-decoration: none;
+    display: block;
+    border-left: 1px solid #013243;
+    margin-left: 2px;
+}
+
+#botoes-nav ul li:first-child {
+    margin-top: 0.6em;
+}
+
+#credito p {
+    padding: 0;
+    margin: 0;
+}
+
+#credito ul {
+    padding-bottom: 1em;
+    margin-left: 1em;
+}
+
+#credito ul li {
+    list-style: square;
+}
+
+#credito a {
+    color: #000;
+}
+
+/* RODAPE */
+#footer {
+    background: #013243;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    float: left;
+}
+
+
+#conteudo-footer {
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#footer span#copy {
+    display: block;
+    padding: 1em 0;
+}
+
+#footer-ra {
+    width: 75%;
+    padding-top: 1em;
+    float: left;
+    text-align: left;
+}
+
+#footer-ra span {
+    display: block;
+}
+
+#footer-navegacao {
+    width: 20%;
+    float: right;
+    padding: 2em 0;
+}
+
+#footer-navegacao ul li{
+    list-style: none;
+}
+
+#footer-navegacao a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-navegacao a:hover{
+    text-decoration: underline;
+}
+
+td {
+    padding-right: 5px;
+}

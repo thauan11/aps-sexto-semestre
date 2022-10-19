@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href="../static/css/index.css">
+    <link rel="icon" href="../static/img/ico.png">
+    <title>Processamento de Imagem</title>
+</head>
+<body>
+    <!-- Inicio Header -->
+    <header>
+
+        <!-- Inicio Navegacao -->
+        <div>
+            <nav id="navegacao">
+                <div id="nav-container">
+                    <ul>
+                        <li><a href="/">Iniciar</a></li>
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/tutorial">Tutorial</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Fim Navegacao -->
+    </header>
+    <!-- Fim Header -->
+
+    <!-- Inicio Conteudo -->
+    <div>
+        <div id="conteudo">
+            <div id="conteudo-container">
+
+                <h1>Sua imagem</h1>
+                <img class="upload_img" id="file_upload" src="../static/img/img.png">
+                <form method="POST" action="/upload" enctype="multipart/form-data">
+                    <label for="upfile" class="input-file-upload" tabindex="0">
+                        <input type="file" name="file" id="upfile" onchange="readURL(this); ">
+                        <span class="btn-upload">Selecione uma imagem</span>
+                    </label>
+                    <button type="submit" value="Submit">Enviar</button>
+                </form>
+                {% set mensagens = get_flashed_messages() %}
+                {% if mensagens %}
+                    <div id="alerta-arquivo">                        
+                        {% for msg in mensagens %}
+                            {{ msg }}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <!-- Fim Conteudo -->
+
+        <!-- Inicio Opções -->
+        <div id="opcoes">
+            <div>
+                <div id="opcoes-container">
+                    <div id="botao-funcoes">
+                        <button id="btn-fn" onclick="showHide('#center')">
+                            <img src="../static/img/list-ico.png">
+                            <h3>Funções</h3>
+                        </button>
+                    </div>
+
+                    <div id="center" class="">
+                        <div id="blk-1">
+                            <form method="POST" action="/cinza">
+                                <button type="submit">Cinza</button>
+                            </form>
+                            
+                            <form method="POST" action="/filtro_pb">
+                                <button type="submit">Preto e Branco</button>
+                            </form>
+                            
+                            <form method="POST" action="/filtro_chiado">
+                                <button type="submit">Chiado</button>
+                            </form>
+                        </div>
+    
+                        <div id="blk-2">
+                            <form method="POST" action="/filtro_lapis">
+                                <button type="submit">Lapis #1</button>
+                            </form>
+
+                            <form method="POST" action="/filtro_lapis2">
+                                <button type="submit">Lapis #2</button>
+                            </form>
+
+                            <form method="POST" action="/filtro_lapis3">
+                                <button type="submit">Lapis #3</button>
+                            </form>
+                        </div>
+    
+                        <div id="blk-3">
+                            <form method="POST" action="/contraste">
+                                <button type="submit">Contraste Preto</button>
+                            </form>
+                            
+                            <form method="POST" action="/inverter_cores">
+                                <button type="submit">Inverter Cores</button>
+                            </form>
+
+                            <form method="POST" action="/filtro_aquarela">
+                                <button type="submit">Aquarela</button>
+                            </form>
+                        </div>
+                        
+                        <div id="blk-4">
+                            <form method="POST" action="/filtro_quente">
+                                <button type="submit">Quente</button>
+                            </form>
+                            
+                            <form method="POST" action="/filtro_frio">
+                                <button type="submit">Frio</button>
+                            </form>
+                            
+                            <form method="POST" action="/filtro_serpia">
+                                <button type="submit">Serpia</button>
+                            </form>
+                        </div>
+                        
+                        <div id="blk-5">
+                            <form method="POST" action="/detectar_rosto">
+                                <button type="submit">Detectar Rostos</button>
+                            </form>
+                            
+                            <form method="POST" action="/censura_rosto">
+                                <button type="submit">Censurar Rostos</button>
+                            </form>
+
+                            <form method="POST" action="/filtro_relevo">
+                                <button type="submit">Relevo</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Fim Opções -->
+    </div>
+
+    <!-- Inicio Rodape -->
+    <div>
+        <footer id="footer">
+            <div id="conteudo-footer">
+                <div id="footer-ra">
+                    <table>
+                        <tr><td>N634CG0</td>
+                            <td>-</td>
+                            <td>VICTOR T. ANDRADE</td> </tr>
+                        <tr> <td>F266AB0</td>
+                            <td>-</td>
+                            <td>ALEX A. ORTEIRO</td> </tr>
+                        <tr> <td>N549645</td>
+                            <td>-</td>
+                            <td>PEDRO L. FAVARAO</td> </tr>
+                        <tr> <td>N5496E2</td>
+                            <td>-</td>
+                            <td>JOAO V. FAVARAO</td> </tr>
+                        <tr> <td>F197AI6</td>
+                            <td>-</td>
+                            <td>VITOR H. BONFADINI</td> </tr>
+                    </table>
+                </div>
+                <div id="footer-navegacao">
+                    <ul>
+                        <li><a href="/">Iniciar</a></li>
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/tutorial">Tutorial</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span id="copy">&copy; Todos os direitos reservados - 2022</span>
+        </footer>
+    </div>
+    <!-- Fim Rodape -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href="../static/css/sobre.css">
+    <link rel="icon" href="../static/img/ico.png">
+    <title>Sobre - PDI</title>
+</head>
+<body>
+    <!-- Inicio Header -->
+    <header>
+
+        <!-- Inicio Navegacao -->
+        <div>
+            <nav id="navegacao">
+                <div id="nav-container">
+                    <ul>
+                        <li><a href="/">Iniciar</a></li>
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/tutorial">Tutorial</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Fim Navegacao -->
+    </header>
+    <!-- Fim Header -->
+    
+    <div>
+        <!-- Inicio Conteudo -->
+        <div id="conteudo">
+
+            <!-- Inicio Container -->
+            <div id="box-conteudo">
+                <div id="conteudo-container">
+                    <div class="left">
+                        <h1>Sobre</h1>
+                        <p>Algumas informações sobre o desenvolvimento do projeto</p>
+                        <p>Esse site é um projeto cujo objetivo é possibilitar a alteração de imagens utilizando Python. Foi criado utilizando essencialmente as bibliotecas Flask e OpenCV. O projeto visa possibilitar para o usuário final a manipulação de imagens sem a necessidade de instalar nenhum programa.</p>
+
+                        <p class="pd-btm">O código do site é encontrado no GitHub, para fins educacionais, o site pode ser acessado e manipulado livremente. Para obter mais informações sobre nossa abordagem, consulte nosso <a href="https://github.com/thauan11/aps-sexto-semestre" target="_blank">GitHub</a> e experimente você mesmo.</p>
+
+                        <section id="ideia">
+                            <h2>Ideia</h2>
+                            <p>O projeto nasceu da necessidade de se criar um programa que fizesse a manipulação de imagens, como aplicação de filtro, reconhecimento facial ou conversão de imagem em texto. Foi projetado a criação de um site, pois dessa forma não haveria necessidade do usuário final realizar instalação de aplicativo, sendo mais seguro e prático.</p>
+    
+                            <p>Muitos programas atualmente estão migrando para nuvem, e como principal fonte de estudo, foi realizado uma pesquisa sobre o funcionamento do <a href="https://learn.microsoft.com/pt-br/training/paths/az-900-describe-cloud-concepts/" target="_blank">Azure (Microsoft)</a>, que possui o <a href="https://azure.microsoft.com/pt-br/" target="_blank">Cloud Azure</a>, onde a Microsoft visa atender a necessidade de seu cliente e prove uma forma prática dos usuários conseguirem trabalhar em nuvem, sendo uma das suas principais aplicações o Windows Virtual Desktop, onde é executado um computador totalmente funcional em um navegador.</p>
+    
+                            <p class="pd-btm">Sendo essa a maior inspiração, provando ser possível desenvolver uma aplicação capaz que conseguiria executar no back-end de um site.</p>
+                        </section>
+    
+                        <section id="projeto">
+                            <h2>Projeto</h2>
+                            
+                            <p>Após definir o tipo de serviço, iniciou-se a busca e desenvolvimento de um layout que combinasse com o projeto. Utilizado como referência, o <a href="https://numpy.org/" target="_blank">NumPy</a> foi definido como layout modelo, por possuir cores agradáveis e um design mais minimalista.</p>
+
+                            <p>De início o back-end começou a ser estruturado através da biblioteca <a href="https://www.djangoproject.com/start/overview/" target="_blank">Django</a>, o problema encontrado mais a frente no projeto, para as ideias que foram decididas, o Django tornou-se complicado de manipular, mais do que o processamento de imagem, devido a isso, uma nova estrutura foi constituída, utilizando a biblioteca <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank">Flask</a>. A decisão de utilizar o Flask foi devido a sua facilidade de manipulação e aplicação.
+
+                            <p>Para manipulação de imagem, a biblioteca escolhida havia sido <a href="https://pypi.org/project/Pillow/" target="_blank">Pillow</a>, pois era de simples implementação. Ao longo do projeto, foi instaurado um novo desafio, tornou-se a ser obrigatório o uso do <a href="https://opencv.org/" target="_blank">OpenCV</a> como biblioteca principal para manipulação e processamento da imagem. </p>
+
+                            <p class="pd-btm">Com desing pronto e linguagem escolhida, seguiu-se para ultima etapa, pegar todos os elementos, unifica-los e fazer funcionar. Com Flask, montamos as páginas e suas funções, utilizando Javascript, foi possivel exibir a  imagem, para que o usuario saiba que imagem será carregada e manipulada, HTML e CSS foi construido todo o layout.</p>
+                        </section>
+    
+                        <section id="credito">
+                            <h2>Créditos</h2>
+                            <p>Desing:</p>
+                            <ul>
+                                <li><a href="https://numpy.org/about/">Numpy</a></li>
+                                <li><a href="https://pypi.org/project/pip/">Pip</a></li>
+                                <li><a href="https://imagecolorpicker.com/">Image Color Picker</a></li>
+                            </ul>
+                                
+                            <p>Processamento de Imagem:</p>
+                                <ul>
+                                    <li><a href="https://opencv.org/">OpenCV</a></li>
+                                    <li><a href="https://www.youtube.com/c/Programa%C3%A7%C3%A3oDin%C3%A2mica">Programação Dinâmica</a></li>
+                                    <li><a href="https://www.youtube.com/c/HashtagPrograma%C3%A7%C3%A3o">Hashtag Programação</a></li>
+                                    <li><a href="https://www.youtube.com/c/UniversoDiscreto">Universo Discreto</a></li>
+                                </ul>
+                                
+                            <p>Site:</p>
+                                <ul>
+                                    <li><a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a></li>
+                                    <li><a href="https://www.youtube.com/c/ProfaAlbaLopes">Profa. Alba Lopes</a></li>
+                                    <li><a href="https://www.treinaweb.com.br/blog/utilizando-arquivos-estaticos-no-flask">TreinaWEB</a></li>
+                                    <li><a href="https://www.youtube.com/c/HashtagPrograma%C3%A7%C3%A3o">Hashtag Programação</a></li>
+                                </ul>
+                                
+                            <p>Autores:</p>
+                                <ul class="pd-btm">
+                                    <li>Vitor Hugo Bonfadini de Souza</li>
+                                    <li>Victor Thauan de Andrade</li>
+                                    <li>Pedro Lorencini  Favarão</li>
+                                    <li>João Victor Lorencini Favarão</li>
+                                    <li>Alex de Almeida Orteiro</li>
+                                </ul>
+
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Inicio navegação lateral -->
+                <div id="nav-conteudo">
+                    <div id="nav-conteudo-container">
+                        <div id="titulo-nav">
+                            <img src="../static/img/list-ico.png">
+                            <h3>Nesta página</h3>
+                        </div>
+                        <div id="botoes-nav">
+                            <ul>
+                                <li><a href="#ideia" id="op1" onclick="aumentaBorder()"
+                                    >Ideia</a></li>
+                                <li><a href="#projeto" id="op2" onclick="aumentaBorder2()"
+                                    >Projeto</a></li>
+                                <li><a href="#credito" id="op3" onclick="aumentaBorder3()"
+                                    >Créditos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim navegação lateral -->
+            </div>
+            <!-- Fim Container -->
+        </div>
+        <!-- Fim Conteudo -->
+    </div>
+
+    <!-- Inicio Rodape -->
+    <div>
+        <footer id="footer">
+            <div id="conteudo-footer">
+                <div id="footer-ra">
+                    <table>
+                        <tr><td>N634CG0</td>
+                            <td>-</td>
+                            <td>VICTOR T. ANDRADE</td> </tr>
+                        <tr> <td>F266AB0</td>
+                            <td>-</td>
+                            <td>ALEX A. ORTEIRO</td> </tr>
+                        <tr> <td>N549645</td>
+                            <td>-</td>
+                            <td>PEDRO L. FAVARAO</td> </tr>
+                        <tr> <td>N5496E2</td>
+                            <td>-</td>
+                            <td>JOAO V. FAVARAO</td> </tr>
+                        <tr> <td>F197AI6</td>
+                            <td>-</td>
+                            <td>VITOR H. BONFADINI</td> </tr>
+                    </table>
+                </div>
+                <div id="footer-navegacao">
+                    <ul>
+                        <li><a href="/">Iniciar</a></li>
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/tutorial">Tutorial</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span id="copy">&copy; Todos os direitos reservados - 2022</span>
+        </footer>
+    </div>
+    <!-- Fim Rodape -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    
+</body>
+</html>

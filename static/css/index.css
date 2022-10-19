@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass';
+}
+
+body {
+    background: #ffffff;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+#center {
+    max-height: 0px;
+    overflow: hidden;
+
+}
+
+.show {
+    min-height: 400px;
+    overflow: visible;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .2s;
+}
+
+/* BARRA DE NAVEGACAO */
+#nav-container {
+    text-align: center;
+    background: #013243;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 50px;
+}
+
+#nav-container ul li {
+    position: left;
+    list-style: none;
+    display: inline-block;
+    padding: 1em;
+}
+
+#nav-container ul a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: #fff;
+}
+
+#nav-container ul a:hover {
+    color: #4dbde5;
+}
+
+/* CONTEUDO */
+#conteudo {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#conteudo-container h1 {
+    padding-top: 0.6em;
+}
+
+#alerta-arquivo {
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 4px;
+    background: rgb(245, 122, 122);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2em 0;
+    margin-top: 7px;
+}
+
+input#fileselector {
+    color: #013243;
+}
+
+.upload_img {
+    background: #ddd;
+    color: #aaa;
+    display: block;
+    border: 5px dashed;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.6em;
+    width: 70%;
+    height: 70%;
+    padding: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-upload {
+    background: #013243;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 0.5em 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 80px;
+    transition: box-shadow 200ms ease-in-out, background 300ms ease-in-out;
+}
+
+button {
+    background: #013243;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 0.779em 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    transition: box-shadow 200ms ease-in-out, background 300ms ease-in-out;
+    border-style: none;
+}
+
+.btn-upload:hover, 
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+span.picture__image {
+    border: 1px solid red;
+    display: inline;
+}
+
+#btn-fn img {
+    display: inline-block;
+    width: 30px;
+    padding-right: 1em;
+}
+
+#btn-fn h3 {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#upfile {
+    display: none;
+}
+
+#opcoes {
+    background: #1b1e23;
+    color: #ffffff;
+    padding: 1.5em 0;
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+#opcoes-container {
+    max-width: 1100px;
+    width: 70%;
+    margin: 0 auto;
+    display: inline;
+}
+
+#botao-funcoes {
+    padding-bottom: 1em;
+    transition: .3s;
+}
+
+#blk-1 {
+    width: 200px;
+    display: inline-block;
+}
+
+#blk-2 {
+    width: 200px;
+    display: inline-block;
+}
+
+#blk-3 {
+    width: 200px;
+    display: inline-block;
+}
+
+#blk-4 {
+    width: 200px;
+    display: inline-block;
+}
+
+#blk-5 {
+    width: 200px;
+    display: inline-block;
+}
+
+#opcoes button {
+    background: #ffffff;
+    color: #1b1e23;
+    width: 150px;
+    height: 100px;
+    padding: 1em 0;
+    margin-top: 1em;
+    margin-right: 3%;
+    margin-left: 6.8%;
+    font-size: 1em;
+}
+
+#opcoes button:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+button#btn-fn {
+    max-height: 50px;
+    background: none;
+    border-radius: 100em;
+    color: #777777;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+button#btn-fn:hover {
+    box-shadow: 0 0 5px #777777;
+}
+
+/* RODAPE */
+#footer {
+    background: #013243;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#conteudo-footer {
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#footer span#copy {
+    display: block;
+    padding: 1em 0;
+}
+
+#footer-ra {
+    width: 75%;
+    padding-top: 1em;
+    float: left;
+    text-align: left;
+}
+
+#footer-ra span {
+    display: block;
+}
+
+#footer-navegacao {
+    width: 20%;
+    float: right;
+    padding: 2em 0;
+}
+
+#footer-navegacao ul li{
+    list-style: none;
+}
+
+#footer-navegacao a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-navegacao a:hover{
+    text-decoration: underline;
+}
+
+td {
+    padding-right: 5px;
+}

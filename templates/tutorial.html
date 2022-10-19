@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href="../static/css/tutorial.css">
+    <link rel="icon" href="../static/img/ico.png">
+    <title>Tutorial - PDI</title>
+</head>
+<body>
+    <!-- Inicio Header -->
+    <header>
+
+        <!-- Inicio Navegacao -->
+        <div>
+            <nav id="navegacao">
+                <div id="nav-container">
+                    <ul>
+                        <li><a href="/">Iniciar</a></li>
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/tutorial">Tutorial</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Fim Navegacao -->
+    </header>
+    <!-- Fim Header -->
+    
+    <div>
+        <!-- Inicio Conteudo -->
+        <div id="conteudo">
+
+            <!-- Inicio Container -->
+            <div id="box-conteudo">
+                <div id="conteudo-container">
+                    <div class="left">
+
+                        <section id="carregando-imagem">
+                            <h1>1. Carregando uma imagem</h1>
+                            <p>Para iniciar, comece clicando em 'Selecionar uma imagem'.</p>
+                            <img src="../static/img/tutorial/1.png">
+                        </section>
+
+                        <section id="selecionando-imagem">
+                            <h2>2. Selecionando a imagem</h2>
+                            <p>Localize a pasta onde esta a imagem que deseja manipular.</p>
+                            <img src="../static/img/tutorial/2.png">
+                            
+                            <h2>2.1. Selecionando uma imagem</h2>
+                            <p>Ao encontrar o arquivo, clique em 'Abrir'</p>
+                            <img src="../static/img/tutorial/3.png">
+                        </section>
+
+                        <section id="enviando-imagem">
+                            <h2>3. Enviando a imagem</h2>
+                            <p>Após carregar a imagem, clique em 'Enviar'.</p>
+                            <p>Caso não clique em 'Enviar', sua imagem não será carregada e não será possível manipulá-la.</p>
+                            <img src="../static/img/tutorial/4.png">
+                        </section>
+
+                        <section id="aplicando-filtro">
+                            <h2>4. Aplicando o filtro</h2>
+                            <p>Clique em 'Funções' para visualizar a lista de botões disponíveis para manipulação da imagem.</p>
+                            <img src="../static/img/tutorial/5.png">
+
+                            <h2>4.1. Aplicando o filtro</h2>
+                            <p>Clique no  filtro que deseja aplicar.</p>
+                            <p>Você pode clicar em mais de um filtro, será aplicado na imagem que fez upload anteriormente.</p>
+                            <img src="../static/img/tutorial/6.png">
+                        </section>
+
+                        <section id="resultado">
+                            <h2>5. Resultado</h2>
+                            <p>Finalizando, você receberá o resultado da sua imagem filtrada.</p>
+                            <img src="../static/img/tutorial/7.png">
+                        </section>
+
+                    </div>
+                </div>
+
+                <!-- Inicio navegação lateral -->
+                <div id="nav-conteudo">
+                    <div id="nav-conteudo-container">
+                        <div id="titulo-nav">
+                            <img src="../static/img/list-ico.png">
+                            <h3>Nesta página</h3>
+                        </div>
+                        <div id="botoes-nav">
+                            <ul>
+                                <li><a href="#carregando-imagem" id="op1" onclick="aumentaBorder()"
+                                    >Como carregar uma imagem</a></li>
+                                <li><a href="#selecionando-imagem" id="op2" onclick="aumentaBorder2()"
+                                    >Como selecionar uma imagem</a></li>
+                                <li><a href="#enviando-imagem" id="op3" onclick="aumentaBorder3()"
+                                    >Como enviar uma imagem</a></li>
+                                <li><a href="#aplicando-filtro" id="op4" onclick="aumentaBorder4()"
+                                    >Como aplicar filtro</a></li>
+                                <li><a href="#resultado" id="op5" onclick="aumentaBorder5()"
+                                    >Resultado</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim navegação lateral -->
+            </div>
+            <!-- Fim Container -->
+        </div>
+        <!-- Fim Conteudo -->
+    </div>
+
+    <!-- Inicio Rodape -->
+    <div>
+        <footer id="footer">
+            <div id="conteudo-footer">
+                <div id="footer-ra">
+                    <table>
+                        <tr><td>N634CG0</td>
+                            <td>-</td>
+                            <td>VICTOR T. ANDRADE</td> </tr>
+                        <tr> <td>F266AB0</td>
+                            <td>-</td>
+                            <td>ALEX A. ORTEIRO</td> </tr>
+                        <tr> <td>N549645</td>
+                            <td>-</td>
+                            <td>PEDRO L. FAVARAO</td> </tr>
+                        <tr> <td>N5496E2</td>
+                            <td>-</td>
+                            <td>JOAO V. FAVARAO</td> </tr>
+                        <tr> <td>F197AI6</td>
+                            <td>-</td>
+                            <td>VITOR H. BONFADINI</td> </tr>
+                    </table>
+                </div>
+                <div id="footer-navegacao">
+                    <ul>
+                        <li><a href="/">Iniciar</a></li>
+                        <li><a href="/sobre">Sobre</a></li>
+                        <li><a href="/tutorial">Tutorial</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span id="copy">&copy; Todos os direitos reservados - 2022</span>
+        </footer>
+    </div>
+    <!-- Fim Rodape -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    
+</body>
+</html>
