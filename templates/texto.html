@@ -25,31 +25,51 @@
     </header>
     <!-- Fim Header -->
 
-
     <!-- Inicio Conteudo -->
-    <div id="conteudo">
-        <div id="conteudo-container">
+    <div>
+        <div id="conteudo">
+            <div id="conteudo-container">
 
-            <h1>Sua imagem</h1>
-            <img class="upload_img" id="file_upload" src="../static/img/img.png">
-            <form method="POST" action="/upload" enctype="multipart/form-data">
-                <label for="upfile" class="input-file-upload" tabindex="0">
-                    <input type="file" name="file" id="upfile" onchange="readURL(this); ">
-                    <span class="btn-upload">Selecione uma imagem</span>
-                </label>
-                <button type="submit" value="Submit">Enviar</button>
-            </form>
-            {% set mensagens = get_flashed_messages() %}
-            {% if mensagens %}
-                <div id="alerta-arquivo">                        
-                    {% for msg in mensagens %}
-                        {{ msg }}
-                    {% endfor %}
+                <div>
+                    <h1>Dado obtido</h1>                
+                    {% set mensagens = get_flashed_messages() %}
+                    {% if mensagens %}           
+                    
+                        {% if texto != '' %}
+                            <div id="texto">
+                                <label>
+                                    {% for msg in mensagens %}
+                                        {{ msg }}
+                                    {% endfor %}
+                                </label>
+                            </div>
+                        {% else %}
+                            <div id="texto">
+                                <label>
+                                    Não foi encontrado nenhum texto!
+                                </label>
+                            </div>
+                        {% endif %} 
+                    {% endif %}
                 </div>
-            {% endif %}
+
+                <!--
+                <div>
+                    <h1>Sua imagem</h1>
+                    <img class="upload_img" id="file_upload" src="../static/img/img.png">
+                </div>-->
+
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <label for="upfile" class="input-file-upload" tabindex="0">
+                        <input type="file" name="file" id="upfile" onchange="readURL(this);" onclick="switchShowHide('#teste')">
+                        <span class="btn-upload">Selecione uma imagem</span>
+                    </label>
+                    <button type="submit" value="Submit">Enviar</button>
+                </form>
+
+            </div>
         </div>
-    </div>
-    <!-- Fim Conteudo -->
+        <!-- Fim Conteudo -->
 
     <div id="blk-opcoes">
         
@@ -163,7 +183,6 @@
         
     </div>
     <!-- Fim Opções -->
-        
 
     <!-- Inicio Rodape -->
     <div>
