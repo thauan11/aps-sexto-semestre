@@ -247,10 +247,11 @@ def detecta_gato(img):
 
 def transcrever_txt(img):
     #pytesseract.pytesseract.tesseract_cmd = r"C:\\Tesseract-OCR\tesseract.exe" #VARIAVEL PRA INDICAR O CONSOLE DO PYTESSERACT
-    texto = pytesseract.pytesseract.image_to_string(img,lang='por' ) #TRANSFORMA A IMAGEM EM TEXTO
-    if texto == '': 
-        texto = "Não foi encontrado nenhum texto!" #SE A IMAGEM NÃO TIVER NENHUM TEXTO, ADICIONA ESSA MENSAGEM
-    return flash(texto) #RETORNA O TEXTO PARA PAGINA DO SITE
+    texto_encontrado = pytesseract.pytesseract.image_to_string(img,lang='por') #TRANSFORMA A IMAGEM EM TEXTO
+    if len(texto_encontrado) <= 3:
+        print("nao encontrou nada")
+        texto_encontrado = 'Não foi encontrado nenhum texto!'
+    return flash(texto_encontrado) #RETORNA O TEXTO PARA PAGINA DO SITE
 
 
 
@@ -364,7 +365,6 @@ def escreve_img():
     img = cv2.imread("/home/thauan/Desktop/APS/Site/static/img/filtrada.png")
     transcrever_txt(img)
     return redirect('/texto')
- 
 
 
 ###### RUN ######
